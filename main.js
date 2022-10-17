@@ -24,6 +24,20 @@ const div = function(array) {
     return array.reduce((partialSum, a) => partialSum / a);
 }
 
-// let exp = sub([23]);
-let exp = div([5, 0]);
-console.log({exp});
+const operate = function(operator, array) {
+    switch(operator) {
+        case '+':
+            return add(array);
+        case '-':
+            return sub(array);
+        case '*':
+            return mult(array);
+        case '/':
+            return div(array);
+        default:
+            console.log("Operator not recognised.");
+    }
+}
+
+console.log(operate('*', [2, 3, 9, 8]));
+
