@@ -18,6 +18,56 @@ body {
     flex-direction: column;
 }
 
+.container {
+    background-color: #fff;
+    width: 700px;
+    height: 80vh;
+    border-radius: 16px;
+}
+
+.container .display {
+    background-color: #000;
+    height: 15vh;
+    border-radius: 16px 16px 0 0;
+    font-size: 1.5rem;
+    padding: 0 16px;
+    font-weight: 600;
+}
+
+.container .display .answers {
+    height: 50%;
+    padding: 8px;
+    text-align: left;
+}
+
+.container .display .calc {
+    height: 50%;
+    padding: 8px;
+    text-align: right;
+}
+
+.container .buttons {
+    background-color: rgb(98, 162, 214);
+    height: 65vh;
+    border-radius: 0 0 16px 16px;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container .buttons button {
+    margin: 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.container .buttons button:hover {
+    background-color: rgb(114, 71, 154);
+    color: #fff;
+}
+
 footer {
     position: absolute;
     bottom: 0;
